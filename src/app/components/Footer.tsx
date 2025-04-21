@@ -116,7 +116,7 @@ const Footer = () => {
                     <Link
                       key={label}
                       href={href}
-                      className="block hover:underline"
+                      className="block"
                     >
                       {label}
                     </Link>

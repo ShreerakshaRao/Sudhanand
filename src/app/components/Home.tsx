@@ -32,6 +32,33 @@ const Home = () => {
             <span>“Businesses that work for</span>
             <span>a better tomorrow”</span>
           </div>
+
+          <div className="aspect-w-16 aspect-h-9 w-full max-w-3xl mx-auto my-20 flex justify-center">
+            <iframe
+              className="w-[400px] h-[260px]"
+              src="https://www.youtube.com/embed/tpZdN8ijU9c"
+              title="YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <iframe
+              className="w-[400px] h-[260px]"
+              src="https://www.youtube.com/embed/389OFMyx4BA?start=36"
+              title="YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <iframe
+              className="w-[400px] h-[260px]"
+              src="https://www.youtube.com/embed/wW_WOzha5to"
+              title="YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
 
         <div className="flex justify-between pt-24 bg-[url(/Img2.svg)] h-[1163px] bg-no-repeat bg-cover bg-[position:right]"></div>
@@ -42,8 +69,12 @@ const Home = () => {
           </div>
 
           <div className="space-y-5">
-            <div className="font-bold text-4xl font-serif">Our Founder & Chairman</div>
-            <div className="font-medium text-[40px] font-serif">Dr. Arjun Sachidanand</div>
+            <div className="font-bold text-4xl font-serif">
+              Our Founder & Chairman
+            </div>
+            <div className="font-medium text-[40px] font-serif">
+              Dr. Arjun Sachidanand
+            </div>
             <div className="max-w-lg text-2xl text-[#333333] font-medium ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
               officiis aut, earum eveniet cum suscipit veniam obcaecati, odit
