@@ -35,7 +35,6 @@ const Header = () => {
         ))}
       </div>
 
-      {/* Mobile menu toggle */}
       <button
         className="md:hidden focus:outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -44,7 +43,6 @@ const Header = () => {
       </button>
     </div>
 
-    {/* Mobile dropdown menu */}
     {menuOpen && (
       <div className="mt-4 md:hidden flex flex-col items-center space-y-4 text-base text-center">
         {navLinks.map(({ name, href }) => (
@@ -53,10 +51,6 @@ const Header = () => {
           </Link>
         ))}
 
-        <div className="flex items-center space-x-2">
-          <Image src="/call.svg" alt="Call Icon" width={20} height={20} />
-          <span>9876543210</span>
-        </div>
       </div>
     )}
   </header>
