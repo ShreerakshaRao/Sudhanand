@@ -6,7 +6,10 @@ import Image from "next/image";
 const Page = () => {
   return (
     <>
-      <div className="flex justify-between pt-24 bg-[url(/Bg4.svg)] h-[880px] bg-no-repeat bg-cover bg-[position:left_50%]"></div>
+      <div
+        className="flex flex-col md:flex-row justify-between pt-24 min-w-0 h-[917px] md:h-[880px] bg-no-repeat bg-cover bg-[position:left] 
+  bg-[url('/BgMobile4.svg')] md:bg-[url('/Bg4.svg')]"
+      ></div>
 
       <main className="mx-5 sm:mx-25">
         <div className="py-15 space-x-5 sm:space-x-25 flex flex-col sm:flex-row justify-center gap-5 sm:gap-0">
@@ -45,53 +48,51 @@ const Page = () => {
         </div>
 
         <div className="w-full overflow-x-auto sm:overflow-visible">
-        <div className="w-full overflow-x-hidden sm:overflow-visible">
-  <div className="flex flex-col sm:flex-row flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between gap-5 sm:gap-6 mx-auto my-10 sm:my-20">
-    <iframe
-      className="w-[90%] sm:w-[230px] h-[200px] sm:h-[230px]"
-      src="https://www.youtube.com/embed/tpZdN8ijU9c"
-      title="YouTube video"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-    <iframe
-      className="w-[90%] sm:w-[230px] h-[200px] sm:h-[230px]"
-      src="https://www.youtube.com/embed/389OFMyx4BA?start=36"
-      title="YouTube video"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-    <iframe
-      className="w-[90%] sm:w-[230px] h-[200px] sm:h-[230px]"
-      src="https://www.youtube.com/embed/wW_WOzha5to"
-      title="YouTube video"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-    <iframe
-      className="w-[90%] sm:w-[230px] h-[200px] sm:h-[230px]"
-      src="https://www.youtube.com/embed/7Ua-RMh3I2c"
-      title="YouTube video"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-    <iframe
-      className="w-[90%] sm:w-[230px] h-[200px] sm:h-[230px]"
-      src="https://www.youtube.com/embed/2-PzV8G9S6A"
-      title="YouTube video"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-  </div>
-</div>
-
-</div>
-
+          <div className="w-full overflow-x-hidden sm:overflow-visible">
+            <div className="flex flex-col sm:flex-row flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between gap-5 sm:gap-6 mx-auto my-10 sm:my-20">
+              <iframe
+                className="w-[90%] sm:w-[230px] h-[200px] sm:h-[230px]"
+                src="https://www.youtube.com/embed/tpZdN8ijU9c"
+                title="YouTube video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="w-[90%] sm:w-[230px] h-[200px] sm:h-[230px]"
+                src="https://www.youtube.com/embed/389OFMyx4BA?start=36"
+                title="YouTube video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="w-[90%] sm:w-[230px] h-[200px] sm:h-[230px]"
+                src="https://www.youtube.com/embed/wW_WOzha5to"
+                title="YouTube video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="w-[90%] sm:w-[230px] h-[200px] sm:h-[230px]"
+                src="https://www.youtube.com/embed/7Ua-RMh3I2c"
+                title="YouTube video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="w-[90%] sm:w-[230px] h-[200px] sm:h-[230px]"
+                src="https://www.youtube.com/embed/2-PzV8G9S6A"
+                title="YouTube video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
 
         <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-10 sm:gap-0">
           <div className="flex flex-col sm:w-[60%] lg:w-[50%]">

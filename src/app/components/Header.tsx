@@ -10,6 +10,7 @@ const navLinks = [
   { name: "Business Verticals", href: "/business" },
   { name: "Investors", href: "/investors" },
   { name: "About Us", href: "/about" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 const Header = () => {
