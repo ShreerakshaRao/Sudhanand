@@ -46,7 +46,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="px-6 md:px-30 pt-15 pb-5 space-y-3 bg-primaryBlue text-white overflow-x-hidden max-w-full">
+    <footer className="px-6 md:px-30 pt-15 pb-5 space-y-3 bg-[#02263E] text-white overflow-x-hidden max-w-full">
       <div className="space-y-7 w-full flex flex-col md:flex-row justify-between md:items-start gap-8">
         <div className="flex-shrink-0">
           <Image

@@ -76,7 +76,7 @@ const Page = () => {
                   <label
                     htmlFor="name"
                     className={`block mb-1 text-sm font-medium transition-colors ${
-                      formData.name ? "text-secondaryBlue" : "text-gray-500"
+                      formData.name ? "text-[#0A72BB]" : "text-gray-500"
                     }`}
                   >
                     Your Name
@@ -90,7 +90,7 @@ const Page = () => {
                     onChange={handleChange}
                     className={`w-full p-3 outline-none border-b-2 transition-colors ${
                       formData.name
-                        ? "border-secondaryBlue"
+                        ? "border-[#0A72BB]"
                         : "border-[#939090] text-gray-500"
                     }`}
                   />
@@ -100,7 +100,7 @@ const Page = () => {
                   <label
                     htmlFor="email"
                     className={`block mb-1 text-sm font-medium transition-colors ${
-                      formData.email ? "text-secondaryBlue" : "text-gray-500"
+                      formData.email ? "text-[#0A72BB]" : "text-gray-500"
                     }`}
                   >
                     Email ID
@@ -114,7 +114,7 @@ const Page = () => {
                     onChange={handleChange}
                     className={`w-full p-3 outline-none border-b-2 transition-colors ${
                       formData.email
-                        ? "border-secondaryBlue"
+                        ? "border-[#0A72BB]"
                         : "border-[#939090] text-gray-500"
                     }`}
                   />
@@ -124,7 +124,7 @@ const Page = () => {
                   <label
                     htmlFor="message"
                     className={`block mb-1 text-sm font-medium transition-colors ${
-                      formData.message ? "text-secondaryBlue" : "text-gray-500"
+                      formData.message ? "text-[#0A72BB]" : "text-gray-500"
                     }`}
                   >
                     Message
@@ -139,7 +139,7 @@ const Page = () => {
                     placeholder="Write your message here"
                     className={`w-full p-3 outline-none border-b-2 transition-colors ${
                       formData.message
-                        ? "border-secondaryBlue"
+                        ? "border-[#0A72BB]"
                         : "border-[#939090] text-gray-500"
                     }`}
                     rows={6}
@@ -154,7 +154,7 @@ const Page = () => {
                     !formData.email ||
                     !formData.message
                   }
-                  className="w-full bg-secondaryBlue text-white p-3 cursor-pointer"
+                  className="w-full bg-[#0A72BB] text-white p-3 cursor-pointer"
                 >
                   {loading ? "Sending..." : "Send Message"}
                 </button>
@@ -162,7 +162,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="bg-primaryBlue text-white w-full max-w-full lg:basis-[40%] sm:m-6 sm:px-10 px-0 m-0 space-y-12 relative overflow-hidden">
+          <div className="bg-[#02263E] text-white w-full max-w-full lg:basis-[40%] sm:m-6 sm:px-10 px-0 m-0 space-y-12 relative overflow-hidden">
 
             <div className="mt-10 max-w-[90%] mx-auto">
 
