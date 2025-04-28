@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import {
   IoLocationSharp,
@@ -14,12 +14,6 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import { FaGooglePlusG } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa6";
 import Link from "next/link";
-
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
 
 const Footer = () => {
   const navLinks = [
@@ -50,48 +44,6 @@ const Footer = () => {
     <IoLogoRss key="rss" />,
   ];
 
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [loading, setLoading] = useState(false);
-  const [responseMessage, setResponseMessage] = useState("");
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-    setResponseMessage("");
-
-    try {
-      const response = await fetch("/api/email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setResponseMessage("Your message has been sent successfully.");
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        setResponseMessage(
-          "Failed to send the message. Please try again later."
-        );
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      setResponseMessage("An error occurred while sending the message.");
-    } finally {
-      setLoading(false);
-    }
-  };
 
   return (
     <footer className="px-6 md:px-30 pt-15 pb-5 space-y-3 bg-primaryBlue text-white overflow-x-hidden max-w-full">
